@@ -1,22 +1,104 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+  background-image: url(pic.png);
+  background-size: 55% ;
+  max-width: 100%;
+  height: auto;
+  
+    background-repeat: no-repeat;
+  background-color:  #DCE1CB;
+
+  
+}
+img{
+   
+  height: auto;
+                               width: 160px;
+                          margin-left: 70px;
+                      padding-top: 10px;
+}
+#register, #login {
+  width: 320px;
+  height: auto;
+  
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 16px;
+  color: #333333;
+  font-size: 14px;
+  background: transparent;
+  margin-left: 65%;
+  margin-top: 50px;
+  
+}
+.form{
+  height: auto;
 }
 
-.App-logo {
-  height: 40vmin;
+form label, form input {
+  display: block;
+  margin-bottom: 10px;
+  width: 90%;
+  margin-left: 25px;
+  border-radius: 5px;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form input {
+  padding: 10px;
+  border: solid 1px #BDC7D8;
+height: auto;
 }
 
-.App-link {
-  color: #09d3ac;
+.button {
+  background-color: #ff4455;
+width: 100%;
+  color: #ffffff;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  border:none;
+  height: auto;
+}
+
+.errorMsg {
+  color: #cc0000;
+  margin-bottom: 12px;
+}
+
+.sucessMsg {
+  color: #6B8E23;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+.last
+{
+  margin-left: 29px;
+  font-size: 11.5px ;
+  height: auto;
+}
+.fir
+{
+  padding-left: 71px;
+  padding-top: 15px;
+  font-size: 12.5px;
+  
+}
+@media  screen and (min-width : 630px) and (max-width: 1190px)
+{body{
+background-size: 60% 120%;  
+  background-color: #DCE1CB;
+}}
+@media  screen and (min-width : 500px) and (max-width: 630px)
+{body{
+ background-size: 65% 120%;
+  background-color: #DCE1CB;
+}}@media  screen and (min-width : 0px) and (max-width: 500px)
+{body{
+  background-size: cover;
+ background-image: none;
+  background-color:  #DCE1CB;
+  width: 20%;
+}
+
 }
